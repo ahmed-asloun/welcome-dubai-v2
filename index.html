@@ -1,0 +1,589 @@
+﻿
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Dubai - Premium Company Setup in Dubai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script-index.js" defer></script>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Sticky Navbar -->
+    <nav class="site-nav fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white tracking-wide">WELCOME TO DUBAI</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#services" class="nav-link hover:text-orange-500 transition">Leistungen</a>
+                <a href="#packages" class="nav-link hover:text-orange-500 transition">Pakete</a>
+                <a href="#franchise" class="nav-link hover:text-orange-500 transition">Franchise-Visum</a>
+                <a href="#process" class="nav-link hover:text-orange-500 transition">Ablauf</a>
+                <a href="#testimonials" class="nav-link hover:text-orange-500 transition">Referenzen</a>
+                <a href="#faq" class="nav-link hover:text-orange-500 transition">FAQ</a>
+                <a href="#contact" class="nav-cta bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg">Kostenlose Erstberatung</a>
+            </div>
+            <button class="md:hidden focus:outline-none text-white" id="mobile-menu-button">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full px-6 py-4 shadow-lg" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="#services" class="nav-link hover:text-orange-500 transition">Leistungen</a>
+                <a href="#packages" class="nav-link hover:text-orange-500 transition">Pakete</a>
+                <a href="#franchise" class="nav-link hover:text-orange-500 transition">Franchise-Visum</a>
+                <a href="#process" class="nav-link hover:text-orange-500 transition">Ablauf</a>
+                <a href="#testimonials" class="nav-link hover:text-orange-500 transition">Referenzen</a>
+                <a href="#faq" class="nav-link hover:text-orange-500 transition">FAQ</a>
+                <a href="#contact" class="nav-cta bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition text-center">Kostenlose Erstberatung</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero relative h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
+        <div class="hero-overlay absolute inset-0 z-10"></div>
+        <img src="http://static.photos/cityscape/1920x1080/1" alt="Dubai Skyline" class="absolute inset-0 w-full h-full object-cover">
+
+        <div class="hero-content container mx-auto px-6 relative z-20 text-left text-white flex flex-col items-start">
+            <div class="flex items-center justify-start space-x-2 mb-6">
+                <div class="flex">
+                    <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                    <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                    <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                    <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                    <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                </div>
+                <span class="text-sm font-medium">4.9/5 basierend auf 879 Bewertungen</span>
+            </div>
+
+            <h1 class="hero-title text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Company Setup in Dubai für Unternehmer &amp; Investoren – <span class="accent">Premium Service von A bis Z</span>
+            </h1>
+
+            <p class="hero-subtitle text-xl md:text-2xl mb-10 max-w-3xl">
+                Relax, you are in Welcome To Dubai. Kein Stress. Keine Verzögerungen. Wir begleiten Sie persönlich bei jedem Schritt.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-start gap-4">
+                <a href="#contact" class="btn-primary bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-xl transform hover:scale-105">
+                    Kostenlose Erstberatung
+                </a>
+                <a href="#packages" class="btn-secondary bg-white/10 hover:bg-white/20 border border-white text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-xl transform hover:scale-105">
+                    Pakete ansehen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Unsere Services – <span class="text-orange-500">Schnell &amp; Stressfrei</span></h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="check-circle" class="text-green-500 mr-3"></i>
+                        <h3 class="text-xl font-bold">Company setup in just 3 days</h3>
+                    </div>
+                    <p class="text-gray-600">Schnellste Firmengründung in Dubai mit unseren Express-Services.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="check-circle" class="text-green-500 mr-3"></i>
+                        <h3 class="text-xl font-bold">VIP visa processing in 3 days</h3>
+                    </div>
+                    <p class="text-gray-600">Priorisierte Visa-Bearbeitung für Sie und Ihre Familie.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="check-circle" class="text-green-500 mr-3"></i>
+                        <h3 class="text-xl font-bold">Bank account opened in 1 hour</h3>
+                    </div>
+                    <p class="text-gray-600">Exklusive Beziehungen zu Top-Banken für sofortige Kontoeröffnung.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="check-circle" class="text-green-500 mr-3"></i>
+                        <h3 class="text-xl font-bold">Airport pickup by private driver</h3>
+                    </div>
+                    <p class="text-gray-600">Luxuriöser Empfang vom ersten Moment an in Dubai.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="check-circle" class="text-green-500 mr-3"></i>
+                        <h3 class="text-xl font-bold">Personal driver for every step</h3>
+                    </div>
+                    <p class="text-gray-600">Dedizierter Fahrer während Ihres gesamten Aufenthalts.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="check-circle" class="text-green-500 mr-3"></i>
+                        <h3 class="text-xl font-bold">Persönliche Begleitung</h3>
+                    </div>
+                    <p class="text-gray-600">Unser Team ist bei jedem Termin physisch mit Ihnen vor Ort.</p>
+                </div>
+            </div>
+
+            <p class="text-center mt-16 text-xl text-gray-700 max-w-3xl mx-auto">
+                Kein Stress. Keine Verzögerungen. Einfach ein reibungsloser Premium-Prozess von A bis Z.
+            </p>
+        </div>
+    </section>
+    <!-- Packages Section -->
+    <section id="packages" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Unsere <span class="text-orange-500">Pakete</span></h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basic Package -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200 hover:border-orange-300 transition">
+                    <h3 class="text-2xl font-bold mb-4">Basic</h3>
+                    <div class="text-4xl font-bold mb-6">8.000€</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Firmengründung in 5 Tagen</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>1 Unternehmensvisum</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Basis-Bankkonto</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Standard-Büroadresse</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-gray-200 hover:bg-gray-300 text-gray-800 py-3 px-6 rounded-full text-center font-medium transition">Erstberatung buchen</a>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border-2 border-orange-300 transform scale-105 relative">
+                    <div class="absolute top-0 right-0 bg-orange-500 text-white px-4 py-1 rounded-bl-lg rounded-tr-lg font-bold">Beliebt</div>
+                    <h3 class="text-2xl font-bold mb-4">Premium</h3>
+                    <div class="text-4xl font-bold mb-6">12.000€</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Firmengründung in 3 Tagen</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>2 Unternehmensvisa</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Premium-Bankkonto</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Büroadresse in Premium-Location</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Flughafenabholung</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-full text-center font-medium transition">Erstberatung buchen</a>
+                </div>
+
+                <!-- Elite Package -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200 hover:border-orange-300 transition">
+                    <h3 class="text-2xl font-bold mb-4">Elite</h3>
+                    <div class="text-4xl font-bold mb-6">15.000€</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Firmengründung in 24 Stunden</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>4 Unternehmensvisa</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Private Banking</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Büroadresse in Top-Location</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>VIP Flughafenabholung</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span>Persönlicher Fahrer für 3 Tage</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-full text-center font-medium transition">Erstberatung buchen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Franchise Section -->
+    <section id="franchise" class="section-dark py-20 bg-gradient-to-r from-teal-800 to-blue-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">100.000€ Investment – <span class="text-orange-300">Sofort Franchise eröffnen</span></h2>
+                <p class="text-xl mb-10">
+                    Werden Sie Restaurantbesitzer in Dubai. Wir übernehmen Setup, Visa, Bank, Standort-Setup und begleiten Sie bis zur Eröffnung.
+                </p>
+                <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-xl transform hover:scale-105">
+                    Franchise Info anfordern
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Unser <span class="text-orange-500">Ablauf</span></h2>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i data-feather="calendar" class="text-orange-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">1. Erstberatung &amp; Strategie</h3>
+                    <p class="text-gray-600">Persönliche Analyse Ihrer Ziele und Bedürfnisse.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i data-feather="file-text" class="text-orange-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">2. Firmengründung &amp; Dokumente</h3>
+                    <p class="text-gray-600">Professionelle Abwicklung aller Formalitäten.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i data-feather="credit-card" class="text-orange-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">3. Visa &amp; Bankkonto Express</h3>
+                    <p class="text-gray-600">Schnellste Bearbeitung dank exklusiver Kontakte.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i data-feather="users" class="text-orange-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">4. Begleitung vor Ort &amp; Abschluss</h3>
+                    <p class="text-gray-600">Persönliche Unterstützung bis zum erfolgreichen Start.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Was unsere <span class="text-orange-500">Kunden</span> sagen</h2>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                    <div class="flex mb-4">
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">
+                        "Die beste Entscheidung meines Lebens! Innerhalb von 3 Tagen hatte ich meine Firma in Dubai gegründet. Der Service ist erstklassig."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/80x80/1" alt="Thomas Müller" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Thomas Müller</h4>
+                            <p class="text-gray-600 text-sm">Unternehmer, München</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                    <div class="flex mb-4">
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">
+                        "Absolut professionell! Jeder Schritt wurde perfekt erklärt und begleitet. Besonders die VIP-Visabearbeitung war beeindruckend schnell."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/80x80/2" alt="Sarah Weber" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Weber</h4>
+                            <p class="text-gray-600 text-sm">Investorin, Berlin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                    <div class="flex mb-4">
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">
+                        "Die persönliche Betreuung war phänomenal. Mein Fahrer hat mich zu jedem Termin gebracht und das Team war immer an meiner Seite."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/80x80/3" alt="Michael Schmidt" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Schmidt</h4>
+                            <p class="text-gray-600 text-sm">Franchise-Nehmer, Hamburg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-6">Unsere Partner</h3>
+                <div class="flex flex-wrap justify-center gap-8 items-center">
+                    <img src="http://static.photos/finance/120x60/1" alt="Partner Logo" class="h-12 opacity-70 hover:opacity-100 transition">
+                    <img src="http://static.photos/finance/120x60/2" alt="Partner Logo" class="h-12 opacity-70 hover:opacity-100 transition">
+                    <img src="http://static.photos/finance/120x60/3" alt="Partner Logo" class="h-12 opacity-70 hover:opacity-100 transition">
+                    <img src="http://static.photos/finance/120x60/4" alt="Partner Logo" class="h-12 opacity-70 hover:opacity-100 transition">
+                    <img src="http://static.photos/finance/120x60/5" alt="Partner Logo" class="h-12 opacity-70 hover:opacity-100 transition">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Häufige <span class="text-orange-500">Fragen</span></h2>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg">
+                        Wie lange dauert die Firmengründung in Dubai?
+                        <i data-feather="chevron-down" class="faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-700 hidden">
+                        Mit unserem Express-Service können wir Ihre Firma in nur 3 Tagen gründen. Der Standardprozess dauert etwa 5-7 Werktage. Für Elite-Kunden bieten wir sogar Gründungen innerhalb von 24 Stunden an.
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg">
+                        Welche Dokumente benötige ich für die Firmengründung?
+                        <i data-feather="chevron-down" class="faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-700 hidden">
+                        Sie benötigen in der Regel einen gültigen Reisepass, einen Lebenslauf und gegebenenfalls Bankreferenzen. Wir erstellen Ihnen eine vollständige Checkliste während der Erstberatung und helfen bei der Beschaffung aller notwendigen Dokumente.
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg">
+                        Kann ich mit dem Firmenvisum auch meine Familie nach Dubai holen?
+                        <i data-feather="chevron-down" class="faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-700 hidden">
+                        Ja, mit einem Unternehmensvisum können Sie Visa für Ihre Ehepartner und Kinder beantragen. Wir kümmern uns um den gesamten Prozess und garantieren schnelle Bearbeitungszeiten.
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg">
+                        Welche Vorteile bietet das Franchise-Paket?
+                        <i data-feather="chevron-down" class="faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-700 hidden">
+                        Unser Franchise-Paket umfasst die komplette Gründung, Standortsuche, Lizenzierung, Personalrekrutierung und Begleitung bis zur Eröffnung. Sie profitieren von unserem Netzwerk an Lieferanten und erhalten ein schlüsselfertiges Restaurantkonzept.
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg">
+                        Wie funktioniert die Bankkontoeröffnung aus der Ferne?
+                        <i data-feather="chevron-down" class="faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-700 hidden">
+                        Dank unserer exklusiven Bankpartnerschaften können wir die meisten Formalitäten für Sie erledigen. Sie müssen nur einmal persönlich zur Unterschrift erscheinen - wir organisieren sogar einen VIP-Termin für Sie.
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg">
+                        Welche laufenden Kosten fallen nach der Gründung an?
+                        <i data-feather="chevron-down" class="faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-700 hidden">
+                        Die laufenden Kosten variieren je nach Unternehmensart und Standort. Typischerweise fallen Lizenzverlängerungen (jährlich), Mietkosten und ggf. Visagebühren an. Wir bieten auch umfassende Buchhaltungs- und Steuerdienstleistungen an.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl shadow-xl p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Kostenlose Erstberatung anfragen</h2>
+                <p class="text-center text-gray-700 mb-10">Wir melden uns innerhalb von 24 Stunden.</p>
+
+                <form id="consultation-form" class="space-y-6">
+    <div class="grid md:grid-cols-2 gap-6">
+        <div>
+            <label for="name" class="block text-gray-700 font-medium mb-2">Vollständiger Name *</label>
+            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+        </div>
+        <div>
+            <label for="email" class="block text-gray-700 font-medium mb-2">E-Mail *</label>
+            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+        </div>
+    </div>
+
+    <div>
+        <label for="phone" class="block text-gray-700 font-medium mb-2">Telefon (optional)</label>
+        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+    </div>
+
+    <div>
+        <label for="budget" class="block text-gray-700 font-medium mb-2">Budget *</label>
+        <input type="text" id="budget" name="budget" placeholder="z.B. 12.000€ Premium" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+    </div>
+
+    <div>
+        <label for="message" class="block text-gray-700 font-medium mb-2">Erzählen Sie uns mehr über sich *</label>
+        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"></textarea>
+    </div>
+
+    <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-lg transition shadow-lg transform hover:scale-105">
+        Jetzt Beratung anfordern
+    </button>
+</form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Welcome To Dubai</h3>
+                    <p class="text-gray-400">
+                        Premium Company Setup Services in Dubai. Wir machen Ihren Geschäftseinstieg in den UAE einfach und stressfrei.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Kontakt</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2 w-4 h-4"></i>
+                            <span>info@email.ae</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2 w-4 h-4"></i>
+                            <span>+9000000000</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="mr-2 w-4 h-4"></i>
+                            <span>Dubai Marina, Dubai, UAE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-orange-400 transition">Leistungen</a></li>
+                        <li><a href="#packages" class="hover:text-orange-400 transition">Pakete</a></li>
+                        <li><a href="#franchise" class="hover:text-orange-400 transition">Franchise</a></li>
+                        <li><a href="#process" class="hover:text-orange-400 transition">Ablauf</a></li>
+                        <li><a href="#faq" class="hover:text-orange-400 transition">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Rechtliches</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-orange-400 transition">Impressum</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition">Datenschutz</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    © 2026 Welcome To Dubai. Alle Rechte vorbehalten.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-orange-400 transition">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-orange-400 transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-orange-400 transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/13475360378"
+    target="_blank"
+    class="whatsapp-button fixed bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 z-50">
+    <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 left-6 bg-gray-800 text-white p-4 rounded-full shadow-xl hover:bg-gray-700 transition transform hover:scale-110 z-40 hidden">
+        <i data-feather="arrow-up"></i>
+    </button>
+
+    <script>
+        feather.replace();
+    </script>
+
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            Calendly.initBadgeWidget({
+                url: 'https://calendly.com/d/cs5k-mjk-fcw/discovery-call-mb-labs-en',
+                text: 'Make an appointment with us',
+                color: '#0069ff',
+                textColor: '#ffffff',
+                branding: undefined
+            });
+        }
+    </script>
+    <!-- Calendly badge widget end -->
+</body>
+</html>
+

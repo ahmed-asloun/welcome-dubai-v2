@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+    --ink: #151c1f;
+    --night: #0f1518;
+    --sand: #f5f1ea;
+    --paper: #fffdf9;
+    --mist: #e6ecec;
+    --accent: #f06b2f;
+    --accent-strong: #e4571f;
+    --accent-soft: rgba(240, 107, 47, 0.18);
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    scroll-behavior: smooth;
+    background: var(--sand);
+    color: var(--ink);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.site-nav {
+    background: rgba(18, 26, 29, 0.86) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-nav a {
+    color: #f4f4f2;
+}
+
+#mobile-menu a {
+    color: var(--ink);
+}
+
+.site-nav .nav-cta {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #f9fafb !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.site-nav .nav-cta:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.hero {
+    background: radial-gradient(circle at top left, rgba(240, 107, 47, 0.18), transparent 50%);
+}
+
+.hero-overlay {
+    background: linear-gradient(120deg, rgba(13, 20, 23, 0.92) 10%, rgba(25, 36, 40, 0.78) 60%, rgba(15, 22, 25, 0.82) 100%);
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.thankyou-hero-image {
+    object-position: center 30%;
+    filter: saturate(0.85) contrast(1.05);
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.08;
+}
+
+.hero-subtitle {
+    color: #d6dee0;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 18px 30px rgba(240, 107, 47, 0.28);
+}
+
+.btn-primary:hover {
+    background: var(--accent-strong);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.section-dark {
+    background: linear-gradient(120deg, #1a2b2f 0%, #1a2f36 50%, #132025 100%) !important;
+    color: #f5f5f2;
+}
+
+.section-dark h2,
+.section-dark p {
+    color: #f5f5f2;
+}
+
+.whatsapp-button {
+    right: 24px;
+    bottom: 176px;
+}
+
+.calendly-badge-widget {
+    right: 24px !important;
+    bottom: 24px !important;
+}
+
+@media (max-width: 640px) {
+    .whatsapp-button {
+        right: 16px;
+        bottom: 160px;
+    }
+
+    .calendly-badge-widget {
+        right: 16px !important;
+        bottom: 16px !important;
+    }
+}
+
+/* Navbar Link Animation */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--accent);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Active Nav Link */
+.nav-link.active {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Hero Section Overlay */
+/* FAQ Accordion */
+.faq-question {
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    color: var(--accent);
+}
+
+.faq-answer {
+    transition: all 0.3s ease;
+}
+
+/* Form Input Focus */
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 0.8s ease-in-out;
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1.06);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.checkmark-animate {
+    animation: popIn 0.7s ease-out 0.2s both;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-headline {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subheadline {
+        font-size: 1.2rem;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f4eee6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-strong);
+}
+
+/* Tailwind utility overrides for the new palette */
+.bg-white {
+    background-color: var(--paper) !important;
+}
+
+.bg-gray-50 {
+    background-color: var(--sand) !important;
+}
+
+.bg-gray-900 {
+    background-color: var(--night) !important;
+}
+
+.text-gray-600 {
+    color: #4b5b60 !important;
+}
+
+.text-gray-700 {
+    color: #3c4a4f !important;
+}
+
+.text-gray-800 {
+    color: #2a3539 !important;
+}
+
+.text-gray-500 {
+    color: #6b7a80 !important;
+}
+
+.bg-orange-500 {
+    background-color: var(--accent) !important;
+}
+
+.hover\:bg-orange-600:hover {
+    background-color: var(--accent-strong) !important;
+}
+/* WhatsApp button (TOP) */
+.whatsapp-button {
+    position: fixed;
+    right: 24px;
+    bottom: 120px; /* above Calendly */
+    z-index: 60;
+}
+
+/* Calendly button (BOTTOM) */
+.calendly-badge-widget {
+    position: fixed !important;
+    right: 24px !important;
+    bottom: 24px !important;
+    z-index: 50 !important;
+}
+@media (max-width: 640px) {
+    .whatsapp-button {
+        right: 16px;
+        bottom: 104px;
+    }
+
+    .calendly-badge-widget {
+        right: 16px !important;
+        bottom: 16px !important;
+    }
+}
+/* Calendly (BOTTOM) */
+.calendly-badge-widget {
+  right: 24px !important;
+  bottom: 24px !important;
+}
+
+/* WhatsApp (ABOVE) */
+.whatsapp-button {
+  right: 24px !important;
+  bottom: 110px !important; /* increase/decrease for more/less gap */
+}
+
+@media (max-width: 640px) {
+  .calendly-badge-widget {
+    right: 16px !important;
+    bottom: 16px !important;
+  }
+
+  .whatsapp-button {
+    right: 16px !important;
+    bottom: 96px !important;
+  }
+}
