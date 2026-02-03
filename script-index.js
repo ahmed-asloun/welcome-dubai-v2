@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             // Replace with your actual Google Form action URL and entry IDs
-            const formAction = 'https://docs.google.com/forms/d/e/1FAIpQLSfx7QxqGc9tmBsK112HbAXUkLxi9Gow9kFaM2Vj9m2kRyRu0Q/formResponse';
+            const formAction = 'https://docs.google.com/forms/d/e/1FAIpQLSfhJEFadIrexduUhxOiUVjoaSsas9t03QaJmYhHNCasSqUm0Q/formResponse';
             const nameEntry = 'entry.1696071945';
             const emailEntry = 'entry.1858917425';
             const phoneEntry = 'entry.1353879457';

@@ -332,3 +332,33 @@ input:focus, textarea:focus, select:focus {
     bottom: 96px !important;
   }
 }
+.site-logo {
+  height: 40px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .site-logo {
+    height: 32px;
+  }
+}
+.site-logo {
+  height: 48px; /* desktop */
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .site-logo {
+    height: 38px; /* mobile */
+  }
+}
+.site-logo {
+  height: 64px; /* desktop */
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .site-logo {
+    height: 48px; /* mobile */
+  }
+}
